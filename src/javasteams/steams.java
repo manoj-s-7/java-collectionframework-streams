@@ -1,51 +1,9 @@
+package javasteams;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-
-class Person{
-    String name;
-    int age;
-    Person(String name,int age){
-        this.name = name;
-        this.age = age;
-    }
-    void display(){
-        System.out.println("Name: "+name+" | "+"Age:"+age);
-    }
-    int getAge(){
-        return age;
-    }
-    String getName(){
-        return name;
-    }
-}
-class Business {
-
-    private String name;
-    private List<Person> people;
-
-    public Business(String name, List<Person> people) {
-        this.name = name;
-        this.people = people;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public List<Person> getPeople() {
-        return people;
-    }
-
-    @Override
-    public String toString() {
-        return "Business{" +
-                "name='" + name + '\'' +
-                ", people=" + people +
-                '}';
-    }
-}
+import java.util.stream.Collectors;
 
 public class steams {
     public static void main(String[] args) {
@@ -55,7 +13,6 @@ public class steams {
         list.add(new Person("akask",21));
         list.add(new Person("jeevanth",24));
         list.add(new Person("sujil",14));
-
         ArrayList<Person> minors = new ArrayList<>();
         for(Person minor:list){
             if(minor.getAge() > 18){
@@ -79,8 +36,6 @@ public class steams {
         list.stream()
                 .map(e->e.getAge())
                 .forEach(System.out::println);
-
-
         List<Business> businesses = new ArrayList<>();
 
         businesses.add(new Business("Google", new ArrayList<Person>() {{
@@ -99,13 +54,22 @@ public class steams {
             add(new Person("Michael", 41));
             add(new Person("Jessica", 28));
             add(new Person("Laura", 13));
+
         }}));
 
         businesses.stream()
-                .flatMap(p ->p.getPeople().stream())
+                .filter(b-> b.getName().equals("Amazon"))
+                .findFirst()
+                .ifPresent(b->b.getPeople().add(new Person("Manoj",19)));
+
+        String s = businesses.stream()
+                .filter(b-> b.getName().startsWith("A"))
+                .flatMap(b ->b.getPeople().stream())
                 .sorted(Comparator.comparing(Person::getName).reversed())
+                .filter(p->p.getAge() >= 18)
                 .map(Person::getName)
-                .forEach(System.out::println);
+                .collect(Collectors.joining(", "));
+        System.out.println(s);
     }
 }
 
