@@ -2,6 +2,10 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
+interface A{
+    void display();
+}
+
 class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,5 +18,11 @@ class Solution {
         System.out.println("China: " + china.format(amount));
         NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
         System.out.println("France: " + france.format(amount));
+
+        A a = ()->{
+            System.out.println("Hello");
+        };
+        a.display();
+
     }
 }
