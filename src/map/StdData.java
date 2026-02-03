@@ -1,30 +1,34 @@
 package map;
 
 public class StdData {
-    private String name;
-    private String group;
-    private double cgpa;
+    private String Name;
+    private String Group;
+    private double CGPA;
 
-    public StdData(String name, String group, double cgpa) {
-        this.name = name;
-        this.group = group;
-        this.cgpa = cgpa;
+    public StdData(String name, String group, double CGPA) {
+        Name = name;
+        Group = group;
+        this.CGPA = CGPA;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public String getGroup() {
-        return group;
+        return Group;
     }
 
-    public double getCgpa() {
-        return cgpa;
+    public double getCGPA() {
+        return CGPA;
     }
 
     @Override
     public String toString() {
-        return "Name : "+ name + " | "+ "Group : "+ group + " | "+ "CGPA : "+ cgpa;
+        return "StdData{" +
+                "Name='" + Name + '\'' +
+                ", Group='" + Group + '\'' +
+                ", CGPA=" + CGPA +
+                '}';
     }
 }

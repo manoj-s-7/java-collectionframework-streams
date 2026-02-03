@@ -1,5 +1,5 @@
-import java.text.NumberFormat;
-import java.util.Locale;
+package Tests;
+
 import java.util.Scanner;
 
 
@@ -8,7 +8,7 @@ interface A{
 }
 abstract class B{
     B(){
-        System.out.println("IN B");
+        System.out.println("IN Tests.B");
     }
 }
 class C extends B{
