@@ -5,17 +5,20 @@ import java.util.List;
 import java.util.Scanner;
 
 
-interface A{
+interface A {
     void display();
 }
-abstract class B{
-    B(){
+
+abstract class B {
+    B() {
         System.out.println("IN Tests.B");
     }
 }
-class C extends B{
+
+class C extends B {
 
 }
+
 class Solution {
     private String name;
 
@@ -29,7 +32,7 @@ class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        A a = ()->{
+        A a = () -> {
             System.out.println("Hello");
         };
         a.display();
@@ -39,55 +42,55 @@ class Solution {
         System.out.println(s1.equals(s2));
         //Basic patterns using loops
         int n = 10;
-        for(int i = 0;i<n;i++){
-            for (int s = 0;s<n-i;s++){
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            for (int j=0;j<i;j++){
+            for (int j = 0; j < i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
-        for (int i=n;i>0;i--){
-            for (int s=0;s<n-i;s++){
+        for (int i = n; i > 0; i--) {
+            for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            for (int j=0;j<i;j++){
+            for (int j = 0; j < i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
-        for(int i = 0;i<n;i++){
-            for (int s = 0;s<n-i;s++){
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            for (int j=0;j<i;j++){
-                System.out.print(j+" ");
+            for (int j = 0; j < i; j++) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
-        for (int i=n;i>0;i--){
-            for (int s=0;s<n-i;s++){
+        for (int i = n; i > 0; i--) {
+            for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            for (int j=0;j<i;j++){
-                System.out.print(j+" ");
+            for (int j = 0; j < i; j++) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
         int num = 10;
-        for(int i = 0;i<n;i++){
-            for (int s = 0;s<n-i;s++){
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            for (int j=0;j<i;j++){
-                System.out.print(num+" ");
+            for (int j = 0; j < i; j++) {
+                System.out.print(num + " ");
                 num++;
             }
             System.out.println();
         }
 
-        List<Integer> val = Arrays.asList(1,2,3,4,5,5);
+        List<Integer> val = Arrays.asList(1, 2, 3, 4, 5, 5);
 
         System.out.println(val.get(1));
         System.out.println(Integer.valueOf(1));

@@ -1,9 +1,9 @@
 package Tests;
 
 import java.util.Objects;
-public class StdData implements Comparable<StdData>{
-    private String Name;
 
+public class StdData implements Comparable<StdData> {
+    private String Name;
     private String Group;
     private double CGPA;
 
@@ -47,6 +47,6 @@ public class StdData implements Comparable<StdData>{
 
     @Override
     public int compareTo(StdData o) {
-        return Double.compare(this.getCGPA(),o.getCGPA());
+        return Double.compare(this.getCGPA(), o.getCGPA());
     }
 }
