@@ -94,5 +94,10 @@ class Solution {
 
         System.out.println(val.get(1));
         System.out.println(Integer.valueOf(1));
+
+        enum Status {
+            PENDING, APPROVED, REJECTED
+        }
+
     }
 }
