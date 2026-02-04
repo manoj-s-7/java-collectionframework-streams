@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -84,5 +86,10 @@ class Solution {
             }
             System.out.println();
         }
+
+        List<Integer> val = Arrays.asList(1,2,3,4,5,5);
+
+        System.out.println(val.get(1));
+        System.out.println(Integer.valueOf(1));
     }
 }

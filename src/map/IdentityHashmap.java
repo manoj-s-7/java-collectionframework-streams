@@ -1,5 +1,7 @@
 package map;
 
+import Tests.StdData;
+
 import java.util.HashMap;
 import java.util.IdentityHashMap;
 
@@ -23,5 +25,12 @@ public class IdentityHashmap {
         System.out.println(System.identityHashCode(k1));
         System.out.println(System.identityHashCode(k2));
         System.out.println(map1);
+
+        IdentityHashMap<StdData,Integer> check = new IdentityHashMap<>();
+        check.put(new StdData("MANOJ","CSE",9.8),1140);
+        check.put(new StdData("MANOJ","CSE",9.8),1140);
+        System.out.println(check);
+
+
     }
 }

@@ -1,5 +1,7 @@
 package map;
 
+import Tests.StdData;
+
 import java.util.HashMap;
 
 public class HashMapDemo {

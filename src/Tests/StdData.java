@@ -1,7 +1,9 @@
-package map;
+package Tests;
 
-public class StdData {
+import java.util.Objects;
+public class StdData implements Comparable<StdData>{
     private String Name;
+
     private String Group;
     private double CGPA;
 
@@ -30,5 +32,21 @@ public class StdData {
                 ", Group='" + Group + '\'' +
                 ", CGPA=" + CGPA +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof StdData stdData)) return false;
+        return Double.compare(CGPA, stdData.CGPA) == 0 && Objects.equals(Name, stdData.Name) && Objects.equals(Group, stdData.Group);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Name, Group, CGPA);
+    }
+
+    @Override
+    public int compareTo(StdData o) {
+        return Double.compare(this.getCGPA(),o.getCGPA());
     }
 }
