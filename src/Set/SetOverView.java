@@ -71,7 +71,7 @@ public class SetOverView {
         copyOnWriteArraySet.add(5);
         for (Integer s:copyOnWriteArraySet){
             System.out.println(s);
-            copyOnWriteArraySet.add(6);
+            copyOnWriteArraySet.add(2);
         }
         System.out.println(copyOnWriteArraySet);
     }

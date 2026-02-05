@@ -1,7 +1,6 @@
 package arraylist;
 
 import comparator.Mycomparator;
-import comparator.Stringlengcomparator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
