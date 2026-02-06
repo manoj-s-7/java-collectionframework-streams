@@ -1,4 +1,7 @@
 package Streams;
 
-public class IntermidiateOperations {
+public class IntermediateOperations {
+    static void main(String[] args) {
+
+    }
 }

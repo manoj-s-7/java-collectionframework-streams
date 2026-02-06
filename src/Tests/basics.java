@@ -1,6 +1,7 @@
 package Tests;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 interface A {
@@ -97,5 +98,7 @@ class Solution {
             PENDING, APPROVED, REJECTED
         }
 
+        Date date = new Date();
+        System.out.println(date.toLocaleString());
     }
 }
