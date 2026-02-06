@@ -17,14 +17,14 @@ It is maintained as a **learning and revision repository**, focusing on understa
 - Sorting collections using `Comparator`
 
 ### Comparator
-- Custom comparator implementations
+- Custom CollectionFramework.comparator implementations
 - Ascending and descending order sorting
 - Comparator using lambda expressions
 - Sorting based on custom logic (e.g., string length)
 
 ### Stream API
 - Creating streams from collections and arrays
-- `forEach`, `map`, `filter`
+- `forEach`, `CollectionFramework.map`, `filter`
 - Method references
 - Basic stream processing patterns
 
