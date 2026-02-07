@@ -6,6 +6,17 @@ A comprehensive learning repository containing practical examples and demonstrat
 
 ---
 
+## 📚 Study Notes (PDFs)
+
+### ☕ Java Collection Framework & Stream API
+- List, Set, Queue, Map
+- Stream API (filter, map, reduce, collectors)
+- Time Complexity (Big-O)
+- Best practices & interview notes
+
+🔗 [View / Download PDF](https://drive.google.com/file/d/1jgzbbyWXkKnMu9-jaguXPCrZuOzCn4QS/view?usp=sharing)
+
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
