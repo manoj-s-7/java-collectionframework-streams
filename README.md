@@ -233,17 +233,13 @@ src/
 
 ---
 
-## 📖 Learning Resources
+## 📖 Learning Resources & videos
 
 ### Official Documentation
 - [Java Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/)
 - [Stream API Guide](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
 - [Lambda Expressions Tutorial](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
-
-### Recommended Reading
-- Effective Java (3rd Edition) by Joshua Bloch
-- Java Concurrency in Practice by Brian Goetz
-- Modern Java in Action by Raoul-Gabriel Urma
+- [Complete Java Collections Framework & Streams Masterclass 2024](https://youtu.be/92k5uokmW9o?si=DGjKodd64UjBO5RN)
 
 ---
 
