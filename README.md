@@ -23,9 +23,7 @@ A comprehensive learning repository containing practical examples and demonstrat
 - [Repository Structure](#repository-structure)
 - [Topics Covered](#topics-covered)
 - [Getting Started](#getting-started)
-- [Code Examples](#code-examples)
 - [Learning Resources](#learning-resources)
-- [Contributing](#contributing)
 
 ---
 
